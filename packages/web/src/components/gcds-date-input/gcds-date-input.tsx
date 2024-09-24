@@ -317,7 +317,15 @@ export class GcdsDateInput {
    * Logic to combine all input values together based on format
    */
   private setValue() {
-    const { yearValue, dayValue, monthValue, format } = this;
+    let { yearValue, dayValue, monthValue, format } = this;
+
+    if (dayValue && dayValue.length === 1 && dayValue != '0') {
+      dayValue = '0' + dayValue;
+      this.dayValue = dayValue;
+    } else if (dayValue && dayValue.length == 3 && dayValue[0] === '0') {
+      dayValue = dayValue.substring(1);
+      this.dayValue = dayValue;
+    }
 
     // All form elements have something entered
     if (yearValue && monthValue && dayValue && format == 'full') {
@@ -367,15 +375,6 @@ export class GcdsDateInput {
         this.monthValue = splitValue[1];
         this.dayValue = splitValue[2];
       }
-    }
-  }
-
-  /**
-   * Format day input value to add 0 to single digit values
-   */
-  private formatDay(e) {
-    if (!isNaN(e.target.value) && e.target.value.length === 1) {
-      this.dayValue = '0' + e.target.value;
     }
   }
 
@@ -504,10 +503,7 @@ export class GcdsDateInput {
         disabled={disabled}
         value={this.dayValue}
         onInput={e => this.handleInput(e, 'day')}
-        onChange={e => {
-          this.handleInput(e, 'day');
-          this.formatDay(e);
-        }}
+        onChange={e => this.handleInput(e, 'day')}
         class={`gcds-date-input__day ${hasError['day'] ? 'gcds-date-input--error' : ''}`}
         {...requiredAttr}
         aria-invalid={hasError['day'].toString()}
