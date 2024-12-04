@@ -2,9 +2,29 @@
 
 # Changelog
 
+## [0.28.0](https://github.com/cds-snc/gcds-components/compare/gcds-components-v0.27.0...gcds-components-v0.28.0)
+
+Released on 2024-12-04
+
+
+### :rotating_light: Breaking changes
+* **gcds-text:** New margins and paddings
+* **gcds-details:** New margins and paddings
+* **gcds-heading:** New margins and paddings
+* **gcds-icon:** New margins and paddings
+* **gcds-container:** Options for the margin and padding properties have changed.
+
+
+Container margin + padding values changed.
+Heading margin-top + margin-bottom values changed.
+Icon margin-left + margin-right values changed.
+Text margin-top + margin-bottom values changed.
+Renamed text size caption to small to align with the global text-small font token.
+Renamed icon size caption to text-small to align with the global text-small font token.
+
 ## [0.27.0](https://github.com/cds-snc/gcds-components/compare/gcds-components-v0.26.3...gcds-components-v0.27.0)
 
-Released on 2024-11-21
+Released on 2024-11-21### :rotating_light: Breaking changes
 
 ### :rocket: New Features
 
