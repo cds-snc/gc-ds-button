@@ -12,13 +12,11 @@ Released on 2024-12-04
 * update components with new typography + spacing tokens (#695) (xxx)
 
 As part of ongoing efforts to align with the Canada.ca Specifications, we have made updates to our spacing and typography scales.
-These changes impact the following:
+These updates were introduced with the [latest release of our design tokens](https://github.com/cds-snc/gcds-tokens/blob/main/CHANGELOG.md#1300).
 
 ### Spacing changes
 
-We introduced new options and reassigned the values of existing options due to an upgrade of our tokens.
-
-Valid values have changed for the properties in the following components.
+The valid values have changed for the properties in the following components.
 
 _If you use these properties_, you may need to update your code.
 
