@@ -8,19 +8,42 @@ Released on 2024-12-04
 
 
 ### :rotating_light: Breaking changes
-* **gcds-text:** New margins and paddings
-* **gcds-details:** New margins and paddings
-* **gcds-heading:** New margins and paddings
-* **gcds-icon:** New margins and paddings
-* **gcds-container:** Options for the margin and padding properties have changed.
 
+* update components with new typography + spacing tokens (#695) (xxx)
 
-Container margin + padding values changed.
-Heading margin-top + margin-bottom values changed.
-Icon margin-left + margin-right values changed.
-Text margin-top + margin-bottom values changed.
-Renamed text size caption to small to align with the global text-small font token.
-Renamed icon size caption to text-small to align with the global text-small font token.
+As part of ongoing efforts to align with the Canada.ca Specifications, we have made updates to our spacing and typography scales.
+These changes impact the following:
+
+### Spacing changes
+
+We introduced new options and reassigned the values of existing options due to an upgrade of our tokens.
+
+Valid values have changed for the properties in the following components.
+
+_If you use these properties_, you may need to update your code.
+
+_If you **don't** use these properties_, you do not need to update your code as the new default values will be applied.
+* [**gcds-container:**](https://github.com/cds-snc/gcds-components/blob/main/packages/web/src/components/gcds-container/readme.md)
+  - `margin`
+  - `padding`
+* [**gcds-heading:**](https://github.com/cds-snc/gcds-components/blob/main/packages/web/src/components/gcds-heading/readme.md)
+  - `margin-top`
+  - `margin-bottom`
+* [**gcds-icon:**](https://github.com/cds-snc/gcds-components/blob/main/packages/web/src/components/gcds-icon/readme.md)
+  - `margin-left`
+  - `margin-right`
+* [**gcds-text:**](https://github.com/cds-snc/gcds-components/blob/main/packages/web/src/components/gcds-text/readme.md)
+  - `margin-top`
+  - `margin-bottom`
+
+### Typography changes
+
+The valid values for the `size` property in the following components has been updated to align with the global text sizes.
+* [**gcds-icon**](https://github.com/cds-snc/gcds-components/blob/main/packages/web/src/components/gcds-icon/readme.md)
+  - `text-small` (previously `caption`)
+* [**gcds-text**](https://github.com/cds-snc/gcds-components/blob/main/packages/web/src/components/gcds-text/readme.md)
+  - `small` (previously `caption`)
+
 
 ## [0.27.0](https://github.com/cds-snc/gcds-components/compare/gcds-components-v0.26.3...gcds-components-v0.27.0)
 
