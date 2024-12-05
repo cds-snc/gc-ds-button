@@ -45,10 +45,9 @@ Only update your code _if you use these properties_, otherwise the new default v
 
 Only update if you use the `caption` value for the `size` property in the following components.
 * [**gcds-icon**](https://github.com/cds-snc/gcds-components/blob/main/packages/web/src/components/gcds-icon/readme.md)
-  - `text-small` (previously `caption`)
+  - Change `caption` to `text-small`
 * [**gcds-text**](https://github.com/cds-snc/gcds-components/blob/main/packages/web/src/components/gcds-text/readme.md)
-  - `small` (previously `caption`)
-
+  - Change `caption` to `text-small`
 
 ## [0.27.0](https://github.com/cds-snc/gcds-components/compare/gcds-components-v0.26.3...gcds-components-v0.27.0)
 
