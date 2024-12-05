@@ -18,25 +18,24 @@ These updates were introduced with the [latest release of our design tokens](htt
 
 The valid values have changed for the properties in the following components.
 
-_If you use these properties_, you may need to update your code.
+Only update your code _if you use these properties_, otherwise the new default values will be applied.
 
-_If you **don't** use these properties_, you do not need to update your code as the new default values will be applied.
-* [**gcds-container:**](https://github.com/cds-snc/gcds-components/blob/main/packages/web/src/components/gcds-container/readme.md)
+* [**gcds-container**](https://github.com/cds-snc/gcds-components/blob/main/packages/web/src/components/gcds-container/readme.md)
   - `margin`
   - `padding`
-* [**gcds-heading:**](https://github.com/cds-snc/gcds-components/blob/main/packages/web/src/components/gcds-heading/readme.md)
+* [**gcds-heading**](https://github.com/cds-snc/gcds-components/blob/main/packages/web/src/components/gcds-heading/readme.md)
   - `margin-top`
   - `margin-bottom`
-* [**gcds-icon:**](https://github.com/cds-snc/gcds-components/blob/main/packages/web/src/components/gcds-icon/readme.md)
+* [**gcds-icon**](https://github.com/cds-snc/gcds-components/blob/main/packages/web/src/components/gcds-icon/readme.md)
   - `margin-left`
   - `margin-right`
-* [**gcds-text:**](https://github.com/cds-snc/gcds-components/blob/main/packages/web/src/components/gcds-text/readme.md)
+* [**gcds-text**](https://github.com/cds-snc/gcds-components/blob/main/packages/web/src/components/gcds-text/readme.md)
   - `margin-top`
   - `margin-bottom`
 
 ### Typography changes
 
-The valid values for the `size` property in the following components has been updated to align with the global text sizes.
+Only update if you use the `caption` value for the `size` property in the following components.
 * [**gcds-icon**](https://github.com/cds-snc/gcds-components/blob/main/packages/web/src/components/gcds-icon/readme.md)
   - `text-small` (previously `caption`)
 * [**gcds-text**](https://github.com/cds-snc/gcds-components/blob/main/packages/web/src/components/gcds-text/readme.md)
