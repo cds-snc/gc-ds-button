@@ -11,14 +11,22 @@ Released on 2024-12-04
 
 * update components with new typography + spacing tokens (#695) (xxx)
 
-As part of ongoing efforts to align with the Canada.ca Specifications, we have made updates to our spacing and typography scales.
+We've made small adjustments to all typography and spacing sizes across the design system. GC Design System components are now closer in appearance to their counterparts on Canada.ca.  
+
 These updates were introduced with the [latest release of our design tokens](https://github.com/cds-snc/gcds-tokens/blob/main/CHANGELOG.md#200).
+
+_**If you are using this package**_
+Upgrade your version number to this release version to receive the changes in font sizes, line heights and spacing values.
 
 ### Spacing changes
 
-The valid values have changed for the properties in the following components.
+The valid values have changed for the properties in the following components. While some values still remain, their underlying value in rem or pixels have changed. See the spacing section of our tokens release to check out the new underlying values. 
 
-Only update your code _if you use these properties_, otherwise the new default values will be applied.
+The valid variables used for the properties in the following components have been updated. While some options remain unchanged, the underlying values they contain (in pixels) have been modified. Check the spacing section of our tokens release for the updated pixel values. 
+
+_Example_: If you were previously using `400` for the `margin` on `gcds-container`, it will be updated to `32px`. If you want to keep it to its previous size of `40px`, you will have change your code to use `450`. Here is a [visual mapping guide](https://github.com/cds-snc/gcds-tokens/blob/main/CHANGELOG.md#spacing-tokens-visual-mapping-guide) to help you identify the values you need to use.
+
+Only update your code _if you use these properties_, otherwise the new default values will be applied automatically.
 
 * [**gcds-container**](https://github.com/cds-snc/gcds-components/blob/main/packages/web/src/components/gcds-container/readme.md)
   - `margin`
