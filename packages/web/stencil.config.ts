@@ -32,6 +32,12 @@ export const config: Config = {
       type: 'dist',
       esmLoaderPath: '../loader',
       isPrimaryPackageOutputTarget: true,
+      copy: [
+            {
+              src: '../../../node_modules/@maps4html/mapml/dist',
+              dest: 'gcds-map',
+            },
+          ],
     },
     {
       type: 'dist-custom-elements',
@@ -48,7 +54,7 @@ export const config: Config = {
       plugins: [require('postcss-nested'), require('cssnano')],
     }),
     inlineSvg(),
-    sass(),
+    sass()
   ],
   testing: {
     transform: {
